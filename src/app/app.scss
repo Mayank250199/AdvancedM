@@ -1,0 +1,26 @@
+.home{
+  background: color($colors,primary);
+  color:color($colors,light);
+  margin-top:30px;
+}
+.setting,.about{
+  background: color($colors,primary);
+  color:color($colors,light);
+  margin-top:30px;
+}
+.toolbar-title{
+  text-align:center;
+}
+.tabs-md .tab-button-icon{
+  color:#ccc;
+}
+.title{
+  text-align:center;
+  font-size: 50px;
+}
+.logo img{
+  width:100px;
+}
+.logo{
+  text-align:center;
+}

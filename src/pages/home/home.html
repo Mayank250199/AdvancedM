@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50 offset-25>
+               <h2 class="title">AdvancedM</h2>
+                 <div class="logo">
+                   <img src="../../assets/imgs/logo1.png" >
+                 </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-100 *ngIf="result">
+        <ion-item>
+          <strong>Operation&nbsp;&nbsp;&nbsp;&nbsp;</strong>:&nbsp;&nbsp;{{result.operation}}
+        </ion-item>
+        <ion-item>
+          <strong>Expression&nbsp;&nbsp;</strong>:&nbsp;&nbsp;{{result.expression}}
+        </ion-item>
+        <ion-item>
+          <strong>Result&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>:&nbsp;&nbsp;{{result.result}}
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+       <ion-col width-100>
+           <button ion-button  color="secondary" (click)="changeValue()" block>Change Values</button>
+       </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

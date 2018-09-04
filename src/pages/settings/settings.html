@@ -1,0 +1,55 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Enter Values</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="setting" padding>
+<ion-grid>
+  <ion-row>
+    <ion-col width-100>
+      <ion-list>
+        <form (ngSubmit)="saveForm()">
+        <ion-item>
+          <ion-label fixed>Operation</ion-label>
+          <ion-select [(ngModel)]="operation" name="operation" interface="popover" >
+                      <ion-option value="simplify">Simplify</ion-option>
+                      <ion-option value="factor">Factor</ion-option>
+                      <ion-option value="derive">Derive</ion-option>
+                      <ion-option value="integrate">Integrate</ion-option>
+                      <ion-option value="zeroes">Find 0's</ion-option>
+                      <ion-option value="tangent">Find Tangent</ion-option>
+                      <ion-option value="area">Area Under Curve</ion-option>
+                      <ion-option value="cos">Cosine</ion-option>
+                      <ion-option value="sin">Sine</ion-option>
+                      <ion-option value="tan">Tangent</ion-option>
+                      <ion-option value="arccos">Inverse Cosine</ion-option>
+                      <ion-option value="arcsin">Inverse Sine</ion-option>
+                      <ion-option value="arctan">Inverse Tangent</ion-option>
+                      <ion-option value="abs">Absolute Value	</ion-option>
+                      <ion-option value="log">Logarithm</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label fixed>
+            Expression
+          </ion-label>
+          <ion-input [(ngModel)]="expression" name="expression" type="text"></ion-input>
+        </ion-item>
+        <br />
+        <button  ion-button color="secondary" type="submit" block>Submit</button>
+      </form>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
